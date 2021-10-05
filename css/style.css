@@ -1,0 +1,1300 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li,
+ol {
+    list-style: none
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* img hover start */
+
+.box {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.ex_box_cont.img_ex .con_list li {
+    height: 320px;
+}
+
+.actionImg1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.actionImg1 img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 0, 0.01deg);
+    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 0, 0.01deg);
+    -moz-transform: scale3d(1, 1, 1) rotate3d(0, 0, 0, 0.01deg);
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    transition: transform .5s ease-out;
+    -webkit-transition: transform .5s ease-out;
+    -moz-transition: transform .5s ease-out;
+}
+
+.actionImg1 .sub_tit {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #4c4c4d;
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+}
+
+.actionImg1:hover img {
+    transform: scale3d(1.6, 1.6, 1) rotate3d(0, 0, 0, 0.01deg);
+    -webkit-transform: scale3d(1.6, 1.6, 1) rotate3d(0, 0, 0, 0.01deg);
+    -moz-transform: scale3d(1.6, 1.6, 1) rotate3d(0, 0, 0, 0.01deg);
+    transition: transform 15s ease-out;
+    -webkit-transition: -webkit-transform 15s ease-out;
+    -moz-transition: -moz-transform 15s ease-out;
+}
+
+.actionImg1:hover .sub_tit {
+    opacity: 1;
+}
+
+
+/* berger icon start*/
+
+.navBtn4 {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    text-align: center;
+}
+
+.navBtn4 .bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 2px;
+    background: #666666;
+    transition: all .325s ease-in-out;
+    -webkit-transition: all .325s ease-in-out;
+    -moz-transition: all .325s ease-in-out;
+}
+
+.navBtn4 .bar:nth-child(1) {
+    top: 5px;
+    left: 0;
+}
+
+.navBtn4 .bar:nth-child(2) {
+    top: 15px;
+}
+
+.navBtn4 .bar:nth-child(3) {
+    top: 15px;
+}
+
+.navBtn4 .bar:nth-child(4) {
+    top: 25px;
+    left: 0;
+}
+
+.is-open .bar:nth-child(1) {
+    left: 40px;
+    opacity: 0;
+}
+
+.is-open .bar:nth-child(2) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.is-open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.is-open .bar:nth-child(4) {
+    left: -40px;
+    opacity: 0;
+}
+
+/* promotion image hover start */
+
+.box {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.actionImg3 {
+    position: relative;
+}
+
+.actionImg3 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.actionImg3 .hover {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #efefef;
+    text-align: center;
+    padding-top: 38%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+}
+
+.actionImg3 .hover .line1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    opacity: 0;
+    transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    -moz-transform: scale(0, 1);
+    transition: transform.4s ease-out .2s, opacity .4s ease-out;
+    -webkit-transition: -webkit-transform .4s ease-out .2s, opacity .4s ease-out;
+    -moz-transition: -moz-transform .4s ease-out .2s, opacity .4s ease-out;
+    box-sizing: border-box;
+}
+
+.actionImg3 .hover .line2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    opacity: 0;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    transition: transform.4s ease-out .2s, opacity .4s ease-out;
+    -webkit-transition: -webkit-transform .4s ease-out .2s, opacity .4s ease-out;
+    -moz-transition: -moz-transform .4s ease-out .2s, opacity .4s ease-out;
+    box-sizing: border-box;
+}
+
+.actionImg3 .hover .sub_tit {
+    color: #fff;
+    font-size: 16px;
+    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    opacity: 0;
+    transition: transform .5s ease-out .2s, opacity .5s ease-out .3s;
+    -webkit-transition: -webkit-transform .5s ease-out .2s, opacity .5s ease-out .3s;
+    -moz-transition: -moz-transform .5s ease-out .2s, opacity .5s ease-out .3s;
+}
+
+.actionImg3:hover .hover {
+    opacity: 1;
+}
+
+.actionImg3:hover .hover .sub_tit {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.actionImg3:hover .line1 {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    opacity: 1;
+}
+
+.actionImg3:hover .line2 {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    opacity: 1;
+}
+
+/* gnb hover menu start*/
+
+.actionBtn7 {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    margin: auto;
+    padding: 0 18px;
+    line-height: 40px;
+    color: #4c4c4d;
+    font-family: 'GmarketSansLight';
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.actionBtn7:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #444;
+    transform: scale3d(0, 1, 1);
+    transform-origin: center center;
+    transition: transform .3s;
+}
+
+.actionBtn7:hover:after {
+    transform: scale3d(1, 1, 1);
+}
+
+/* nav hover menu start */
+
+.actionBtn19 {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.actionBtn19:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    height: 4px;
+    background: #000000;
+    transition: height .35s ease, left .35s ease, top .35s ease, padding .35s ease, opacity .35s ease, border-radius .35s ease;
+    -webkit-transition: height .35s ease, left .35s ease, top .35s ease, padding .35s ease, opacity .35s ease, border-radius .35s ease;
+    -moz-transition: height .35s ease, left .35s ease, top .35s ease, padding .35s ease, opacity .35s ease, border-radius .35s ease;
+    opacity: 0;
+}
+
+.actionBtn19 .lb {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    transition: color .35s ease .05s, letter-spacing .35s ease .05s;
+    -webkit-transition: color .35s ease .05s, letter-spacing .35s ease .05s;
+    -moz-transition: color .35s ease .05s, letter-spacing .35s ease .05s;
+}
+
+.actionBtn19:hover:after {
+    height: 100%;
+    top: -8px;
+    left: -15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    opacity: 1;
+}
+
+.actionBtn19:hover .lb {
+    color: #fff;
+    letter-spacing: normal;
+}
+
+/* event main image hover start */
+
+
+.actionImg8 {
+    position: relative;
+    font-size:0;
+}
+
+.actionImg8 img {
+    width: 100%;
+    height: 100%;
+}
+
+.actionImg8 .back {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.actionImg8 .back .back_inner {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.actionImg8 .back .back_inner span {
+    display: block;
+}
+
+.actionImg8 .back .back_inner .sub_tit {
+    color: #fff;
+    font-size: 20px;
+}
+
+.actionImg8 .back .back_inner .desc {
+    margin-top: 19px;
+    color: #b1b1b1;
+    font-size: 12px;
+    padding-bottom: 1vw;
+}
+
+.actionImg8:hover .back {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: opacity .3s, transform .6s;
+}
+
+.back_inner > a {
+    color: white;
+    font-size: 12px;
+    padding: 2vw;
+}
+
+
+/* facilitie image hover start */
+
+
+
+/* css start */
+header,
+nav,
+section,
+div#reservation,
+div#subresve,
+div#promotion,
+div#event,
+div#facilitie,
+div#room,
+footer {
+    width: 80vw;
+    margin: auto;
+}
+
+div#promotion,
+div#event,
+div#facilitie,
+div#room {
+    padding-top: 100px
+}
+
+div#promotion > div#prohead,
+div#event > div#evhead,
+div#facilitie > div#fachead {
+    overflow: hidden;
+    border-bottom: 1px solid #333333
+}
+
+div#promotion > div#prohead > h2,
+div#event > div#evhead > h2,
+div#facilitie > div#fachead > h2,
+div#room > div#roomhead > h2 {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+    text-align: left;
+    font-weight: 700;
+}
+
+div#promotion > div#prohead > span,
+div#event > div#evhead > span,
+div#facilitie > div#fachead > span,
+div#room > div#roomhead > span {
+    float: right;
+}
+
+div#promotion > div#prohead > span > a,
+div#event > div#evhead > span > a,
+div#facilitie > div#fachead > span > a,
+div#room > div#roomhead > span > a {
+    color: #666666
+}
+
+
+
+/* header start */
+header {
+    padding-top: 20px;
+    overflow: hidden;
+    height: 6vw;
+}
+
+header > h1 {
+    width: 20%;
+    float: left;
+    margin-left: 2%
+}
+
+header > h1 > a {
+    display: block;
+    font-size: 0;
+}
+
+header > h1 > a > img {
+    width: 70%;
+}
+
+
+header > div#hdwrap {
+    width: 78%;
+    float: right;
+}
+
+header > div#hdwrap > div {
+    float: left;
+}
+
+header > div#hdwrap > div#gnb {
+    width: 87%;
+    float: left;
+}
+
+header > div#hdwrap > div#gnb > ul {
+    width: 50%;
+    display: flex;
+    float: right;
+}
+
+header > div#hdwrap > div#gnb > ul > li {
+    flex: auto;
+    float: left;
+    line-height: 6vw;
+    text-align: center;
+}
+
+header > div#hdwrap > div#gnb > ul > li > a {
+    color: #666666;
+    font-family: 'GmarketSansLight';
+}
+
+header > div#hdwrap > div#berger {
+    width: 13%;
+    float: right;
+    height: 6vw
+}
+
+header > div#hdwrap > div#berger > a {
+    margin-top: 2vw
+}
+
+/* nav start */
+nav {
+    overflow: hidden;
+}
+
+nav > ul {
+    width: 85%;
+    float: left;
+    margin-left: 2%;
+    display: flex;
+    height: 5vw;
+}
+
+nav > ul > li {
+    flex: auto;
+    float: left;
+    text-align: center;
+    padding: 1.5vw 0;
+    line-height: 2vw
+}
+
+nav > ul > li > a {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 2vw;
+}
+
+nav > div#navsq {
+    width: 10%;
+    float: right;
+    height: 5vw;
+    background-color: #fae317
+}
+
+
+
+/* section start */
+
+
+
+
+
+
+
+section > div > ul > li > a > img {
+    width: 100%;
+}
+
+/* reservation start */
+div#reservation {
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+div#reservation > form#resvewrap > h3 {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#reservation > form#resvewrap > div#resveroom {
+    width: 24%;
+    float: left;
+    line-height: 40px;
+    border-left: 5px solid #0d7fbe;
+    padding-left: 2%
+}
+
+div#reservation > form#resvewrap > div#resveroom > span {
+    margin-left: 5px;
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#reservation > form#resvewrap > div#resveroom > select {
+    padding: 1.5%;
+    font-size: 16px;
+    color: #666666;
+    border-radius: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#reservation > form#resvewrap > div#checkinout {
+    width: 22%;
+    float: left;
+    line-height: 40px;
+}
+
+div#reservation > form#resvewrap > div#checkinout > dl > dt {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#reservation > form#resvewrap > div#checkinout > dl > dd {
+    color: #666666;
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+}
+
+div#reservation > form#resvewrap > div#roomguest {
+    width: 16%;
+    float: left;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#reservation > form#resvewrap > div#roomguest > dl {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+div#reservation > form#resvewrap > div#roomguest > dl > dt {
+    font-size: 20px;
+    font-weight: 800
+}
+
+div#reservation > form#resvewrap > div#roomguest > dl > dd {
+    color: #666666;
+    font-family: 'GmarketSansLight';
+    font-size: 14px
+}
+
+div#reservation > form#resvewrap > button {
+    background-color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 70px;
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/* subresve start*/
+div#subresve {
+    background: #ececec;
+    overflow: hidden;
+    padding: 0;
+    font-family: 'GmarketSansLight';
+}
+
+div#subresve > span {
+
+    line-height: 55px;
+    font-size: 13px
+}
+
+div#subresve > span:first-child {
+    float: left;
+    margin-left: 5%;
+    color: #666666;
+    width: 45%;
+}
+
+div#subresve > span:last-child {
+    float: right;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+}
+
+div#subresve > span:last-child > a {
+    color: #666666
+}
+
+
+
+/* promotion section start */
+
+div#promotion {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#promotion > div#prosection {
+    padding-top: 60px
+}
+
+
+div#promotion > div#prosection > ul {
+    overflow: hidden;
+}
+
+div#promotion > div#prosection > ul > li {
+    width: 30%;
+    margin: 0 1.5%;
+    float: left;
+    overflow: hidden;
+}
+
+
+div#promotion > div#prosection > ul > li > div:first-child > h3 {
+    float: left;
+    width: 20%;
+    line-height: 50px;
+    text-align: center;
+}
+
+div#promotion > div#prosection > ul > li > div:first-child > span {
+    float: left;
+    width: 60%;
+    line-height: 25px;
+}
+
+div#promotion > div#prosection > ul > li > div:first-child > a {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    line-height: 50px;
+}
+
+div#promotion > div#prosection > ul > li > div:first-child > a > img {
+    width: 10%;
+}
+
+div#promotion > div#prosection > ul > li > div:last-child {
+    overflow: hidden;
+    margin-top: 1vw;
+}
+
+div#promotion > div#prosection > ul > li > div:last-child > img {
+    width: 100%;
+}
+
+div#promotion > div#prosection > ul > li > div:last-child > div.hover > div.sub_tit > a {
+    color: white;
+}
+
+
+
+/* event start*/
+
+div#event {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#event > div#evmain {
+    padding-top: 50px;
+
+}
+
+div#event > div#evmain > div#ev1 {
+    margin-left: 10%;
+    overflow: hidden;
+    width: 90%;
+}
+
+
+
+div#event > div#evmain > div#ev1 > div#ev1image {
+    overflow: hidden;
+    width: 35%;
+    float: left;
+}
+
+div#event > div#evmain > div#ev1 > div#ev1image > a {
+    display: block;
+    font-size: 0;
+}
+
+div#event > div#evmain > div#ev1 > div#ev1image > a > img {
+    width: 100%;
+}
+
+div#event > div#evmain > div#ev1 > div#ev1text {
+    float: left;
+    width: 65%;
+}
+
+
+div#event > div#evmain > div#ev1 > div#ev1text > h3 {
+    padding-top: 7vw;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+div#event > div#evmain > div#ev1 > div#ev1text > h3 > span {
+    border-top: 8px solid #fae317;
+    padding-top: 5%;
+}
+
+div#event > div#evmain > div#ev1 > div#ev1text > p {
+    padding-top: 3%;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'GmarketSansLight';
+    margin-left: 10%
+}
+
+div#event > div#evmain > div#ev2 {
+    overflow: hidden;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2red {
+    width: 10%;
+    float: left;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2red > a {
+    display: block;
+    font-size: 0;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2red > a > img {
+    width: 100%;
+    height: 3vw
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap {
+    width: 90%;
+    float: left;
+    display: flex;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div {
+    flex: 1;
+    margin-right: 1%;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > h4 {
+    float: left;
+    width: 85%;
+    height: 3vw;
+    line-height: 3vw;
+    margin-left: 5%;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > span {
+    width: 10%;
+    text-align: right;
+    float: left;
+    line-height: 3vw
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > span > a {
+    color: #666666
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > div {
+    float: left;
+    width: 100%;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > div > a {
+    display: block;
+}
+
+div#event > div#evmain > div#ev2 > div#ev2wrap > div > div > a > img {
+    width: 100%;
+}
+
+ div.hover > div.sub_tit > a {
+    color: white;
+}
+
+
+/* facilite start */
+
+div#facilitie {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#facilitie > div#facmain {
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    overflow: hidden;
+    position: relative
+}
+
+
+div#facilitie > div#facmain > div#factitle {}
+
+div#facilitie > div#facmain > div#factitle > ul > li {
+    line-height: 35px;
+    width: calc(100% - 800px);
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li:hover > a {
+    color: white;
+    display: block;
+    background-color: black;
+    transition: all 1s;
+    width: 55%;
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li:hover > div {
+    overflow: hidden;
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > a {
+    color: #666666;
+    display: block;
+    padding: 5px 30px 5px 20px
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > div {
+    position: absolute;
+    left: 300px;
+    top: 80px;
+    height: 230px;
+    background: white;
+    width: 800px;
+    transition: all 1.5s;
+    opacity: 0
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > div > p {
+    font-family: 'GmarketSansLight';
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > div:first-child {
+    z-index: 2
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > div > h3 {
+    font-size: 35px;
+    padding-bottom: 1vw;
+}
+
+div#facilitie > div#facmain > div#factitle > ul > li > div.on {
+    z-index: 4;
+    opacity: 1;
+}
+
+div#facilitie > div#facevent {
+    padding-top: 4vw;
+    margin: auto;
+    width: 90%;
+    overflow: hidden
+}
+
+div#facilitie > div#facevent > figure {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+}
+
+div#facilitie > div#facevent > figure > div {
+    height: 15vw;
+    overflow: hidden;
+    position: relative;
+}
+
+div#facilitie > div#facevent > figure > div > img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#facilitie > div#facevent > figure > div > a > img {
+    width: 100%;
+    position: absolute;
+    top: -301px;
+    left: 0;
+    transition: all 1s;
+}
+
+.imgon{ top:0 !important; z-index: 5;  }
+
+
+div#facilitie > div#facevent > figure > figcaption {
+    padding-top: 1vw;
+}
+
+div#facilitie > div#facevent > figure > figcaption > span {
+    display: block;
+    font-size: 12px;
+    line-height: 20px
+}
+
+div#facilitie > div#facevent > figure > figcaption > span > a {
+    color: #333333;
+}
+
+div#facilitie > div#facevent > figure > figcaption > span:first-child {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 1vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#facilitie > div#facevent > figure > figcaption > span:nth-child(2) {
+    font-family: 'GmarketSansLight';
+}
+
+div#facilitie > div#facevent > figure > figcaption > span:last-child {
+    font-family: 'GmarketSansLight';
+}
+
+
+
+/* room start */
+
+div#room {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#room > div#roomhead {
+    overflow: hidden;
+}
+
+div#room > div#roomwrap {
+    width: 80vw;
+    height: 36vw;
+    border: 1px solid #333333;
+    overflow: hidden;
+    box-sizing: border-box
+}
+
+div#room > div#roomwrap > div:first-child {
+    width: 35%;
+    float: left;
+    border-right: 1px solid #333333;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 36vw;
+}
+
+div#room > div#roomwrap > div:first-child > div#r1sec1 {
+    overflow: hidden;
+    border-spacing: inherit;
+    height: 32vw;
+}
+
+div#room > div#roomwrap > div:first-child > div#r1sec2 {
+    height: 4vw;
+    width: 50%;
+    background-color: #0d7fbe
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:first-child > a {
+    display: block;
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:first-child > a > img {
+    width: 100%;
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:last-child {
+    width: 50%;
+    height: 5vw;
+    background-color: #0d7fbe
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:last-child > ul {
+    width: 100%;
+    overflow: hidden
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:last-child > ul > li {
+    width: 50%;
+    float: left
+}
+
+div#room > div#roomwrap > div:first-child > ul > li:last-child > ul > li:first-child {
+    background-color: #0d7fbe;
+}
+
+div#room > div#roomwrap > div:nth-child(2) {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #333333;
+    box-sizing: border-box;
+    height: 36vw;
+
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec1 {
+    overflow: hidden;
+    height: 25vw;
+    position: relative;
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec1 > div#r2sec1text {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    border-left: 8px solid #f50f0f;
+    width: calc(20vw - 10% - 8px)
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec1 > div#r2sec1text > h3 {
+
+    padding-left: 5%;
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec1 > div#r2sec1text > p {
+    line-height: 25px;
+    padding: 3% 0 0 5%;
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec2 {
+    overflow: hidden;
+    height: 11vw;
+
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec2 > a {
+    display: block;
+    font-size: 0;
+}
+
+div#room > div#roomwrap > div:nth-child(2) > div#r2sec2 > a > img {
+    width: 100%;
+
+}
+
+
+
+div#room > div#roomwrap > div:last-child {
+    width: 40%;
+    float: left;
+}
+
+div#room > div#roomwrap > div:last-child > div#r3sec1 {
+    height: 21vw;
+    overflow: hidden;
+
+}
+
+div#room > div#roomwrap > div:last-child > div#r3sec2 {
+    width: 100%;
+    border-top: 1px solid #333333;
+    box-sizing: border-box;
+    height: 15vw;
+    position: relative;
+}
+
+div#room > div#roomwrap > div:last-child > div#r3sec2 > div#r3sec2text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+div#room > div#roomwrap > div:last-child > div#r3sec2 > div#r3sec2text > h3 > span {
+    border-top: 8px solid #fae317;
+    padding-top: 5%;
+    display: inline-block
+}
+
+div#room > div#roomwrap > div:last-child > div#r3sec2 > div#r3sec2text > p {
+    line-height: 25px;
+    padding-top: 3%;
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+}
+
+/* footer start */
+footer {
+    margin: auto;
+    background-color: black;
+    width: 80vw;
+    padding: 2% 0;
+    font-family: 'GmarketSansLight';
+    overflow: hidden;
+}
+
+
+
+footer > h2 {
+    width: 12%;
+    float: left;
+    margin-left: 3%
+}
+
+footer > h2 > a {
+    display: block
+}
+
+footer > h2 > a > img {
+    width: 100%;
+}
+
+footer > div#fmenu {
+    color: white;
+    width: 67%;
+    margin: auto;
+    float: left;
+    background: black;
+    margin-left: 3%
+}
+
+footer > div#fmenu > ul {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* flex는 길이가 다른 요소들에게 일정한 간격을 부여하고싶을때 사용한다. 부모요소에 display flex걸고, 자식요소에 flex : auto ~ 1 등의 값을 적용시켜서 조정한다 */
+
+footer > div#fmenu > ul > li {
+    flex: auto;
+    font-size: 13px;
+    text-align: center;
+
+
+}
+
+footer > div#fmenu > ul > li > a {
+    color: white;
+    padding: 0 1.5vw;
+}
+
+footer > div#fmenu > p {
+    display: block;
+    padding-top: 2%;
+    color: #999999;
+    font-size: 12px;
+    line-height: 18px
+}
+
+footer > div#familysite {
+    position: relative;
+    width: 15%;
+    float: left;
+    margin-top: -3px;
+
+
+}
+
+footer > div#familysite > button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer > div#familysite > button > img {
+    width: 8%;
+    padding-left: 3%;
+    z-index: 1;
+}
+
+footer > div#familysite > ul {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    font-family: 'GmarketSansLight';
+}
+
+footer > div#familysite > ul > li {
+    color: white;
+    text-align: center;
+    line-height: 22px;
+    background: black
+}
+

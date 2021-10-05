@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seoul Garden Hotel</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="image/mainlogo.png" alt="메인로고">
+            </a>
+        </h1>
+        <div id="hdwrap">
+            <div id="gnb">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="code_view actionBtn7">
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="code_view actionBtn7">
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="code_view actionBtn7">
+                            <span>예약확인</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="berger">
+                <a href="#none" class="navBtn4">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">RESERVATION</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">ROOM</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">DINING</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">PROMOTION</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="code_view actionBtn19">
+                    <span class="lb">FACILITIE</span>
+                </a>
+            </li>
+        </ul>
+        <div id="navsq">
+
+        </div>
+    </nav>
+    <section>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#">
+                        <img src="image/section" alt="섹션이미지1">
+                    </a>
+                    <p>
+                        2021 SEOUL GARDEN HOTEL <br>
+                        LATE SUMMER POOL FESTIVAL
+                    </p>
+                    <p>
+                        합리적인 가격으로 서울가든호텔의 수영장을 경험해보세요.<br>
+                        BEVERAGE PROMOTION을 통해 더 특별한<br>
+                        도심속 휴식을 즐길 수 있는 기회도 제공합니다.
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/section11.jpg" alt="섹션이미지2">
+                    </a>
+                    <p>
+                        SEOUL GARDEN HOTEL <br> AUTUMN WORLD WINE FESTA
+                    </p>
+                    <p>
+                        세계의 많은 와인을 고객님의 취향에 맞게 <br>
+                        전문 소믈리에의 추천에 맞게 즐겨볼 수 있는 기회를 가져보세요.<br>
+                        시중가보다 할인된 가격에 직접 구매도 가능합니다.
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/section22" alt="섹션이미지3">
+                    </a>
+                    <p>
+                        GOOD BYE COVID, PICNIC EVENT
+                    </p>
+                    <p>
+                        지금까지 즐길 수 없었던 피크닉의 기회,<br>
+                        SEOUL GARDEN HOTEL과 함께 <br>
+                        소중한 인연과 함께 호텔에서 즐기는 피크닉을 경험해보세요.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="reservation">
+        <form id="resvewrap" method="get">
+            <h3>RESERVATION</h3>
+            <div id="resveroom">
+                <span>SELECT ROOM</span>
+                <select name="room">
+                    <option value="STANDARD DOUBLE">STANDARD DOUBLE</option>
+                    <option value="STANDARD TWIN">STANDARD TWIN</option>
+                    <option value="STANDARD TERRACE DOUBLE">STANDARD TERRACE DOUBLE</option>
+                    <option value="STANDARD TERRACE TWIN">STANDARD TERRACE TWIN</option>
+                    <option value="STANDARD TRIPLE">STANDARD TRIPLE</option>
+                    <option value="STANDARD FAMILY TWIN">STANDARD FAMILY TWIN</option>
+                    <option value="STANDARD QUAD">STANDARD QUAD</option>
+                    <option value="DELUXE DOUBLE">DELUXE DOUBLE</option>
+                    <option value="DELUXE TWIN">DELUXE TWIN</option>
+                    <option value="PREMIER SUITE DOUBLE">PREMIER SUITE DOUBLE</option>
+                    <option value="PREMIER SUITE TWIN">PREMIER SUITE TWIN</option>
+                    <option value="GARDEN SUITE ROOM">GARDEN SUITE ROOM</option>
+                </select>
+            </div>
+            <div id="checkinout">
+                <dl>
+                    <dt>CHECK - IN &ndash; OUT</dt>
+                    <dd>2021. 09. 06 월 ~ 2021. 09. 07 화</dd>
+                </dl>
+            </div>
+            <div id="roomguest">
+                <dl>
+                    <dt>ROOM</dt>
+                    <dd>1</dd>
+                </dl>
+                <dl>
+                    <dt>GUEST</dt>
+                    <dd>2</dd>
+                </dl>
+            </div>
+            <button>
+                SEARCH
+            </button>
+        </form>
+    </div>
+    <div id="subresve">
+
+        <span>
+            새로워진 온라인 예약으로 더욱 편리하고 빠르게 예약 해보세요.
+        </span>
+        <span>
+            <a href="#">
+                다이닝 &amp; 세부시설예약하기 &gt;
+            </a>
+        </span>
+
+    </div>
+    <div id="promotion">
+        <div id="prohead">
+            <h2>PROMOTION</h2>
+            <span>
+                <a href="#"> MORE &gt;</a>
+            </span>
+        </div>
+        <div id="prosection">
+
+            <ul>
+                <li>
+                    <div>
+                        <h3>01</h3>
+                        <span>
+                            h_Garden<br>
+                            Steak Festa
+                        </span>
+                        <a href="#">
+                            <img src="image/arrow1.jpg" alt="프로모션화살표1">
+                        </a>
+                    </div>
+                    <div class="box actionImg3">
+                        <img src="image/promotion1" alt="프로모션이미지1" />
+                        <div class="hover">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="sub_tit">
+                                <a href="#"> More Detail &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>02</h3>
+                        <span>
+                            Cafe 1883<br>
+                            Afternoon Tea Set
+                        </span>
+                        <a href="#">
+                            <img src="image/arrow1.jpg" alt="프로모션화살표2">
+                        </a>
+                    </div>
+                    <div class="box actionImg3">
+                        <img src="image/promotion2" alt="프로모션이미지2" />
+                        <div class="hover">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="sub_tit">
+                                <a href="#"> More Detail &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>03</h3>
+                        <span>
+                            Wedding Hall<br>
+                            Small Wedding Event
+                        </span>
+                        <a href="#">
+                            <img src="image/arrow1.jpg" alt="프로모션화살표3">
+                        </a>
+                    </div>
+                    <div class="box actionImg3">
+                        <img src="image/promotion3" alt="프로모션이미지3" />
+                        <div class="hover">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="sub_tit">
+                                <a href="#"> More Detail &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="event">
+        <div id="evhead">
+            <h2>EVENT</h2>
+            <span>
+                <a href="#"> MORE &gt;</a>
+            </span>
+        </div>
+        <div id="evmain">
+            <div id="ev1">
+                <div id="ev1image">
+                    <div class="box actionImg8">
+                        <img src="image/event1" alt="이벤트메인이미지" />
+                        <div class="back">
+                            <div class="back_inner">
+                                <span class="sub_tit">Youth, Welcome event</span>
+
+                                <span class="desc">서울가든호텔과 함께 <br>
+                                    젊은 감성에 맞춘 호캉스의 경험을 <br>
+                                    합리적인 가격에 즐겨보세요.</span>
+                                <a href="#"> More Detail &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ev1text">
+                    <h3><span>YOUTH</span>, Fill The Difference</h3>
+                    <p>지금까지 경험한 적 없는 특별한 추억을 서울가든호텔에서 만들어 보세요.</p>
+                </div>
+
+            </div>
+            <div id="ev2">
+                <div id="ev2red">
+                    <a href="#">
+                        <img src="image/ev2red" alt="이벤트페이지레드">
+                    </a>
+                </div>
+                <div id="ev2wrap">
+                    <div id="ev2sec1">
+                        <h4>PRIVATE TERRACE SPA</h4>
+                        <span><a href="#"> &gt; </a></span>
+                        <div class="box actionImg3">
+                            <img src="image/event2" alt="이벤트이미지2" />
+                            <div class="hover">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="sub_tit">
+                                    <a href="#"> More Detail &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ev2sec2">
+                        <h4>IYOIYO OMAKASE</h4>
+                        <span><a href="#"> &gt; </a></span>
+                        <div class="box actionImg3">
+                            <img src="image/event3" alt="이벤트이미지3" />
+                            <div class="hover">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="sub_tit">
+                                    <a href="#"> More Detail &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ev2sec3">
+                        <h4>PRIVATE TERRACE SPA</h4>
+                        <span><a href="#"> &gt; </a></span>
+                        <div class="box actionImg3">
+                            <img src="image/event4" alt="이벤트이미지4" />
+                            <div class="hover">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="sub_tit">
+                                    <a href="#"> More Detail &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="facilitie">
+        <div id="fachead">
+            <h2>FACILITIE</h2>
+            <span>
+                <a href="#">MORE &gt; </a>
+            </span>
+        </div>
+        <div id="facmain">
+            <div id="factitle">
+                <ul>
+                    <li>
+                        <a href="#">
+                            BUSINESS CENTER
+                        </a>
+                        <div id="ftext1">
+                            <h3>BUSINESS CENTER</h3>
+                            <p> 호텔 이용중 급작스러운 업무로 인한 메일과 인터넷 사용이 필요하다면<br>
+                                1층의 비지니스 센터를 찾아주세요.<br>
+                                24시간 항시 운영으로 언제 생길지 모르는 고객님의 비즈니스에 도움을 드리겠습니다.</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            FLOWER SHOP
+                        </a>
+                        <div id="ftext2">
+                            <h3>FLOWER SHOP</h3>
+                            <p> 호텔 내부에 위치한 플라워 샵에서는 고객님의 니즈에 맞춰<br>
+                                두명의 플로리스트가 최상의 경험을 선사합니다.<br>
+                                원하시는 경우 미리 예약후 원하시는 시간에 찾아가실 수도 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            BEAUTY SHOP
+                        </a>
+                        <div id="ftext3">
+                            <h3>BEAUTY SHOP</h3>
+                            <p>
+                                뷰티 샵 '이나지오'는 변신이 시작되는 곳 이라는 이탈리어입니다. <br>
+                                전문 메이크업, 졸업, 면접, 혼주, 셀프웨딩, 프라이빗 메이크업을 <br>
+                                각 분야별 전문 원장님을 통해서 여유롭게 받으실 수 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            FITNESS CENTER
+                        </a>
+                        <div id="ftext4">
+                            <h3>FITNESS ROOM</h3>
+                            <p>쾌적한 공간, 최신 설비와 함께 평소에 느껴보지 못한 특별한 피트니스를 경험해보세요. <br>
+                                호텔 이용 고객님께서는 무료로 이용할 수 있는것은 물론,<br>
+                                전문 트레이너의 1회 무료 P/T도 진행할 수 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            WEDDING HALL
+                        </a>
+                        <div id="ftext5">
+                            <h3>WEDDING HALL</h3>
+                            <p>일생에서 가장 소중하고 특별한 웨딩의 날<br>
+                                38년동안 쌓인 노하우로 품격이 돋보이는 웨딩의 순간을 서울가든호텔과 함께하세요. <br>
+                                우아한 인테리어, 최첨단 시설, 축적된 서비스, 신선한 식재료의 품격있는 피로연 메뉴로 기품 있는 웨딩을 완성합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            MEETING ROOM
+                        </a>
+                        <div id="ftext6">
+                            <h3>MEETING ROOM</h3>
+                            <p>고객님의 연회와 비즈니스를 책임집니다.<br>
+                                서울가든호텔의 연회장은 고객님의 용도와 규모에 알맞게 선택이 가능하며, <br>
+                                성공적인 연회 및 비지니스를 책임지는 동반자의 역할을 하겠습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="facevent">
+            <figure>
+                <div>
+                    <img src="image/facilitie1" alt="내부시설1">
+                    <a href="#">
+                        <img src="image/health.jpg" alt="내부시설1_1">
+                    </a>
+                </div>
+                <figcaption>
+                    <span><a href="#">FITNESS CENTER</a></span>
+                    <span>넓은 공간, 최신 설비로 최상의 만족감을 경험하세요</span>
+                    <span>호텔 투숙객 한정 1회 무료 P/T 제공</span>
+                </figcaption>
+
+            </figure>
+            <figure>
+                <div>
+                    <img src="image/facilitie2" alt="내부시설2">
+                    <a href="#">
+                        <img src="image/flower.jpg" alt="내부시설2_1">
+                    </a>
+                </div>
+                <figcaption>
+                    <span><a href="#">FLOWER SHOP</a></span>
+                    <span>트렌디한 플로리스트의 감성을 느껴보세요.</span>
+                    <span>숙박 바우처 확인 시 20% 할인</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <div>
+                    <img src="image/facilitie3.jpg" alt="내부시설">
+                    <a href="#">
+                        <img src="image/beauty.jpg" alt="내부시설3_1">
+                    </a>
+                </div>
+                <figcaption>
+                    <span><a href="#">BEAUTY SHOP</a></span>
+                    <span>합리적인 가격으로 전문 메이크업을 경험해보세요</span>
+                    <span>호텔 이용객 전체 15% 할인</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <div>
+                    <img src="image/facilitie4.jpg" alt="내부시설4">
+                    <a href="#">
+                        <img src="image/meeting.jpg" alt="내부시설4_1">
+                    </a>
+                </div>
+                <figcaption>
+                    <span><a href="#">MEETING ROOM</a></span>
+                    <span>고객님의 성공적인 비지니스를 책임지겠습니다.</span>
+                    <span>6인이하 소수인원 이용시 드링크 쿠폰제공</span>
+                </figcaption>
+            </figure>
+
+
+
+        </div>
+    </div>
+    <div id="room">
+        <div id="roomhead">
+            <h2>ROOM</h2>
+            <span>
+                <a href="#">MORE &gt; </a>
+            </span>
+        </div>
+        <div id="roomwrap">
+            <div>
+                <div id="r1sec1">
+                    <div class="box actionImg1">
+                        <a href="#">
+                            <img src="image/room1" alt="객실1">
+                        </a>
+                    </div>
+                </div>
+                <div id="r1sec2">
+
+                </div>
+            </div>
+            <div>
+                <div id="r2sec1">
+                    <div id="r2sec1text">
+                        <h3>STANDARD DOUBLE</h3>
+                        <p>부담없는 가격으로 도심속에서<br>당신의 쉴 공간을 제공합니다.</p>
+                    </div>
+                </div>
+                <div id="r2sec2">
+                    <div class="box actionImg1">
+                        <a href="#">
+                            <img src="image/room2" alt="객실2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="r3sec1">
+                    <div class="box actionImg1">
+                        <a href="#">
+                            <img src="image/room3" alt="객실3">
+                        </a>
+                    </div>
+                </div>
+                <div id="r3sec2">
+                    <div id="r3sec2text">
+                        <h3><span>SUITE ROOM</span></h3>
+                        <p>평소보다 더 특별한 날에는 <br>
+                            오랜 시간 기억 될 당신만의 공간에서 휴식을 취해보세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>
+            <a href="#">
+                <img src="image/footerlogo" alt="푸터로고">
+            </a>
+        </h2>
+        <div id="fmenu">
+            <ul>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">멤버쉽 안내</a></li>
+                <li><a href="#">금액권 및 제품교환권 이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">광고메일 수신거부</a></li>
+            </ul>
+            <p>
+                04168 서울시 마포구 마포대로58(도화동) 대표이사 이일규, 이교상 T. 02. 710. 7112<br>
+                사업자등록번호 105-81-03830 이메일 nf.official.330@gmail.com <br>
+                Copyright 2021 by ChoiJaeHyeok., Ltd All Rights Reserved
+            </p>
+        </div>
+        <div id="familysite">
+            <button>
+                FAMILY SITE
+                <img src="image/footerarrow" alt="패밀리사이트화살표">
+            </button>
+            <ul>
+                <li>패밀리사이트1</li>
+                <li>패밀리사이트2</li>
+                <li>패밀리사이트3</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
